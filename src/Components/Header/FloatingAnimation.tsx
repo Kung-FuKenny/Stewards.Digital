@@ -1,6 +1,6 @@
 // src/Components/FloatingAnimation.tsx
 import React, { useRef, useState, useEffect } from 'react';
-import { useDrag } from 'react-use-gesture';
+import { useDrag } from '@use-gesture/react';
 import floatingAnimationVideo from '@/assets/animation.webm';
 
 
