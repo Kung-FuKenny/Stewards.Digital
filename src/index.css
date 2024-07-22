@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Varela Round', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Styles for the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #6aa6ff; /* Color of the thumb */
+  border-radius: 4px; /* Rounded corners for the thumb */
+}
+
+/* Styles for the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: #a7c4ff; /* Color of the track */
+  border-radius: 4px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh) translateX(-50%);
+  }
+  100% {
+    transform: translateY(-100px) translateX(-50%);
+  }
+}
+
+.animate-float {
+  animation: float 15s linear infinite;
+  will-change: transform;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(100vh) translateX(-50%);
+  }
+  50% {
+    transform: translateY(-50%) translateX(-50%);
+  }
+  100% {
+    transform: translateY(100vh) translateX(-50%);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 5s ease-in-out infinite;
+  will-change: transform;
+}
+
+.video-container video {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .video-container {
+    max-width: 600px; /* Adjust as needed */
+  }
+}
+
+@media (min-width: 1024px) {
+  .video-container {
+    max-width: 800px; /* Adjust as needed */
+  }
+}
+
+@media (min-width: 1280px) {
+  .video-container {
+    max-width: 1000px; /* Adjust as needed */
+  }
+}
