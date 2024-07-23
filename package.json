@@ -9,7 +9,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "predeploy": "npm run build",
     "preview": "vite preview",
-    "postinstall": "npm install --only=dev"
+    "postinstall": "npm install"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
