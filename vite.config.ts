@@ -6,26 +6,15 @@ import path from 'path';
 export default defineConfig({
   plugins: [react()],
   resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src'),
-    },
-  },
-  base: '/Hospital-Website',  // Set base path if deploying to a subdirectory
-  server: {
-    // Configure the development server if needed
-    open: true,  // Automatically open the app in the browser
-    port: 3000,  // Set custom port if needed
-  },
-  build: {
-    outDir: 'dist',
-    rollupOptions: {
-      input: {
-        main: path.resolve(__dirname, 'src/main.tsx'),
+    alias: [
+      {
+        find: '@',
+        replacement: path.resolve(__dirname, './src'),
       },
-    },
+    ],
   },
+  base: '/Hospital-Website',
 });
-
 // import { defineConfig } from 'vite';
 // import react from '@vitejs/plugin-react';
 
