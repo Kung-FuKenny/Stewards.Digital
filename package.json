@@ -8,7 +8,8 @@
     "dev": "vite",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "predeploy": "npm run build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postinstall": "npm install --only=dev"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
